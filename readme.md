@@ -18,15 +18,6 @@ Builds will be created in a `dist` folder, and all public files will be copied t
 
 	npm install
 
-### Recommended VSCode Extensions
-
-* eslint
-* stylelint
-* PostCSS Intellisense Highlighting
-* EditorConfig
-
-(Or equivalents for your preferred editor/IDE.)
-
 ## Run & Develop
 
 	npm run dev
