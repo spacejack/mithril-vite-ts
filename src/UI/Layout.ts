@@ -1,17 +1,21 @@
 import m from 'mithril'
+import mithrilLogo from '../img/mithril.svg'
 import typescriptLogo from '../img/typescript.svg'
 
 export default function Layout(): m.Component {
 	let count = 0
 	return {
 		view: () => m('div',
-			m('a', {href: 'https://vite.dev', target: '_blank'},
-				m('img.logo', {src: '/img/vite.svg', alt: 'Vite logo'})
+			m('a', {href: 'https://mithril.js.org/', target: '_blank'},
+				m('img.logo.vanilla', {src: mithrilLogo, alt: 'Mithril logo'})
 			),
 			m('a', {href: 'https://www.typescriptlang.org/', target: '_blank'},
 				m('img.logo.vanilla', {src: typescriptLogo, alt: 'TypeScript logo'})
 			),
-			m('h1', 'Vite + TypeScript'),
+			m('a', {href: 'https://vite.dev', target: '_blank'},
+				m('img.logo', {src: '/img/vite.svg', alt: 'Vite logo'})
+			),
+			m('h1', 'Mithril + TypeScript + Vite'),
 			m('div.card',
 				m('button',
 					{
@@ -22,7 +26,7 @@ export default function Layout(): m.Component {
 				)
 			),
 			m('p.read-the-docs',
-				'Click on the Vite and TypeScript logos to learn more'
+				'Click on any of the logos to learn more'
 			)
 		)
 	}
